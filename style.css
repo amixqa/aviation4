@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    background: #d8d4cc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292722;
+}
+
+body {
+    padding: 20px 0;
+}
+
+/* ================= СЛАЙД ================= */
+
+.slide {
+    width: 1120px;
+    height: 630px;
+    margin: 0 auto 25px;
+    padding: 48px 65px;
+    background: #f7f4ed;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+    border-left: 8px solid #8c7049;
+}
+
+.slide::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    bottom: -130px;
+    width: 350px;
+    height: 350px;
+    border: 35px solid rgba(140,112,73,.08);
+    border-radius: 50%;
+}
+
+/* ================= ОБЩИЕ ================= */
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 2px solid #b7aa95;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.top span {
+    color: #8c7049;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.top h2 {
+    font-size: 34px;
+    color: #453a2e;
+    letter-spacing: .5px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.55;
+    margin-bottom: 17px;
+}
+
+h3 {
+    color: #6f5739;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 28px;
+}
+
+li {
+    font-size: 19px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+}
+
+/* ================= COVER ================= */
+
+.cover {
+    text-align: center;
+    padding-top: 35px;
+    border-left: none;
+    border-top: 10px solid #8c7049;
+}
+
+.logo {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.institute {
+    font-size: 27px;
+    font-weight: 700;
+    color: #4d4032;
+    margin-bottom: 18px;
+}
+
+.cover h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #5a4935;
+}
+
+.line {
+    width: 300px;
+    height: 3px;
+    background: #a28760;
+    margin: 16px auto;
+}
+
+.discipline {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.cover h2 {
+    max-width: 850px;
+    margin: 18px auto;
+    font-size: 34px;
+    line-height: 1.25;
+    color: #2e2b26;
+}
+
+.number {
+    display: inline-block;
+    border: 2px solid #8c7049;
+    padding: 7px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.students {
+    position: absolute;
+    right: 65px;
+    bottom: 65px;
+    text-align: left;
+}
+
+.students p {
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.city {
+    position: absolute;
+    left: 65px;
+    bottom: 55px;
+    font-size: 18px;
+}
+
+/* ================= CONTENT ================= */
+
+.content-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 25px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 18px;
+    background: #ebe6dc;
+    border-left: 4px solid #9a7b50;
+    font-size: 19px;
+}
+
+.content-item b {
+    color: #8c7049;
+    font-size: 20px;
+}
+
+/* ================= TWO COLUMNS ================= */
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.info-card {
+    background: #e9e3d8;
+    border: 1px solid #c5b9a6;
+    padding: 30px;
+    text-align: center;
+}
+
+.plane-icon {
+    font-size: 70px;
+    color: #8c7049;
+}
+
+.info-card h3 {
+    font-size: 34px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats b {
+    font-size: 29px;
+    color: #765b39;
+}
+
+.stats span {
+    font-size: 14px;
+}
+
+/* ================= HISTORY ================= */
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.history-card {
+    background: #ebe6dc;
+    padding: 22px;
+    border-top: 5px solid #96784f;
+}
+
+.history-card .year {
+    font-size: 34px;
+    font-weight: 700;
+    color: #8c7049;
+    margin-bottom: 10px;
+}
+
+.history-card h3 {
+    font-size: 21px;
+}
+
+.history-card p {
+    font-size: 17px;
+}
+
+.quote {
+    margin-top: 25px;
+    padding: 18px 25px;
+    background: #ded7ca;
+    border-left: 6px solid #8c7049;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* ================= DATE ================= */
+
+.big-date {
+    width: 280px;
+    height: 280px;
+    background: #8c7049;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.big-date strong {
+    font-size: 95px;
+    line-height: .9;
+}
+
+.big-date span {
+    font-size: 26px;
+}
+
+.big-date small {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.important {
+    margin-top: 25px;
+    padding: 17px 25px;
+    background: #e5ded2;
+    border: 2px solid #b5a58e;
+    font-size: 18px;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.time {
+    border-left: 5px solid #8c7049;
+    padding: 20px;
+    background: #ebe6dc;
+    min-height: 170px;
+}
+
+.time span {
+    font-size: 29px;
+    color: #795d3c;
+    font-weight: bold;
+}
+
+.time p {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.montreal {
+    margin-top: 25px;
+    padding: 18px;
+    background: #ded7ca;
+}
+
+.montreal h3 {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* ================= ORG ================= */
+
+.intro {
+    font-size: 20px;
+    max-width: 950px;
+}
+
+.org-chart {
+    text-align: center;
+}
+
+.org {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e5ded2;
+    border: 2px solid #9a7b50;
+    min-width: 250px;
+    min-height: 90px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.org b {
+    font-size: 21px;
+    color: #5d4a34;
+}
+
+.org span {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.main-org {
+    background: #8c7049;
+    color: white;
+}
+
+.main-org b {
+    color: white;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #8c7049;
+}
+
+.org-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ================= SYMBOL ================= */
+
+.symbol {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: #8c7049;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+/* ================= COUNCIL ================= */
+
+.council-card {
+    background: #e9e3d8;
+    border: 2px solid #c0b29d;
+    padding: 35px;
+    text-align: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #8c7049;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.council-card h3 {
+    font-size: 30px;
+}
+
+.mini-line {
+    height: 2px;
+    width: 100px;
+    background: #9a7b50;
+    margin: 20px auto;
+}
+
+/* ================= TECHNICAL ================= */
+
+.technical {
+    text-align: center;
+    background: #ebe6dc;
+    padding: 45px;
+}
+
+.technical-icon {
+    font-size: 80px;
+    color: #8c7049;
+}
+
+.technical h3 {
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+/* ================= SECRETARY ================= */
+
+.secretary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.secretary {
+    padding: 22px;
+    background: #e9e3d8;
+    border-left: 5px solid #8c7049;
+}
+
+.secretary b {
+    font-size: 22px;
+    color: #604b32;
+}
+
+.secretary p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/* ================= LANGUAGES ================= */
+
+.country-card {
+    background: #8c7049;
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+.country-card h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.country-card p {
+    font-size: 18px;
+}
+
+.big-number {
+    font-size: 95px;
+    font-weight: bold;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.languages span {
+    padding: 14px;
+    background: #e6dfd4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* ================= IMPORTANCE ================= */
+
+.importance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.importance > div {
+    padding: 24px;
+    background: #e9e3d8;
+    border-top: 5px solid #8c7049;
+}
+
+.importance span {
+    font-size: 36px;
+    color: #9a7b50;
+    font-weight: bold;
+}
+
+.importance h3 {
+    font-size: 25px;
+    margin: 8px 0;
+}
+
+.importance p {
+    font-size: 17px;
+}
+
+/* ================= CONCLUSION ================= */
+
+.conclusion {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.conclusion-mark {
+    text-align: center;
+    font-size: 60px;
+    color: #8c7049;
+    margin-bottom: 15px;
+}
+
+.conclusion p {
+    font-size: 19px;
+}
+
+/* ================= SOURCES ================= */
+
+.sources {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.source {
+    padding: 17px 22px;
+    background: #e9e3d8;
+    border-left: 5px solid #8c7049;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.final-word {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #765a39;
+    letter-spacing: 2px;
+}
+
+/* ================= PRINT A4 LANDSCAPE ================= */
+
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 297mm;
+        background: white;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .slide {
+        width: 297mm;
+        height: 210mm;
+        min-height: 210mm;
+        margin: 0;
+        padding: 17mm 20mm;
+        box-shadow: none;
+        border: none;
+        page-break-after: always;
+        break-after: page;
+    }
+
+    .slide:last-child {
+        page-break-after: auto;
+    }
+}
+
+/* ================= ЭКРАН ================= */
+
+@media screen and (max-width: 1150px) {
+
+    .slide {
+        width: 95vw;
+        height: auto;
+        min-height: 630px;
+    }
+}
